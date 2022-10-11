@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      name: discovery
+      name: discovery-service
       uri: http://localhost:8081
       username: configUser
       password: configPassword
