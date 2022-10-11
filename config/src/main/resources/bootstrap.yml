@@ -2,6 +2,8 @@ server:
   port: 8081
 
 spring:
+  application:
+    name: config
   cloud:
     config:
       server:
@@ -12,8 +14,10 @@ spring:
           searchPaths: application-config
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
-  application:
-    name: config
+      security:
+        user:
+          name: configUser
+          password: configPassword
 
 #eureka:
 #  client:
@@ -21,8 +25,4 @@ spring:
 #    registryFetchIntervalSeconds: 5
 #    serviceUrl:
 #      defaultZone: http://localhost:8761/eureka/
-security:
-  user:
-    name: configUser
-    password: configPassword
-    role: SYSTEM
+
