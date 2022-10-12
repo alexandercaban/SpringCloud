@@ -1,8 +1,6 @@
 server:
   port: 8099
 spring:
-  application:
-    name: discovery-service
   redis:
     host: localhost
     port: 6379
