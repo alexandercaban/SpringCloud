@@ -16,10 +16,10 @@ spring:
         user:
           name: root
           password: s3cr3t
-#eureka:
-#  client:
-#    region: default
-#    registryFetchIntervalSeconds: 5
-#    serviceUrl:
-#      defaultZone: http://localhost:8761/eureka/
+eureka:
+  client:
+    region: default
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
 
