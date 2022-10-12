@@ -3,5 +3,5 @@ spring:
     config:
       name: discovery-service
       uri: http://localhost:8081
-      username: configUser
-      password: configPassword
+      username: root
+      password: s3cr3t

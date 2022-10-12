@@ -16,9 +16,8 @@ spring:
           password: ${GIT_PASSWORD}
       security:
         user:
-          name: configUser
-          password: configPassword
-
+          name: root
+          password: s3cr3t
 #eureka:
 #  client:
 #    region: default
