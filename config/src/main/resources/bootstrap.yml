@@ -16,10 +16,11 @@ spring:
         user:
           name: root
           password: s3cr3t
-eureka:
-  client:
-    region: default
-    registryFetchIntervalSeconds: 5
-    serviceUrl:
-      defaultZone: http://localhost:8099/eureka/
+#eureka:
+#  client:
+ #   serviceUrl:
+ #       defaultZone: http://localhost:8099/eureka/
+ # instance:
+ #     prefer-ip-address: true
+ #     hostname: localhost
 
