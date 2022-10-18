@@ -18,11 +18,14 @@ spring:
           password: configPassword
 eureka:
   client:
+    instance:
+      prefer-ip-address: true
+      hostname: localhost
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
-        defaultZone: http://discUser:discPassword@localhost:8082/eureka/
-  instance:
-     prefer-ip-address: true
-     hostname: localhost
+        defaultZone: http://configUser:configPassword@localhost:8099/eureka/
+
 
   security:
     user:
