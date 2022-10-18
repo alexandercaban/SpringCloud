@@ -1,7 +1,8 @@
 server:
   port: 8081
-
 spring:
+  application:
+    name: config
   cloud:
     config:
       server:
@@ -21,14 +22,10 @@ eureka:
     instance:
       prefer-ip-address: true
       hostname: localhost
-    registerWithEureka: true
-    fetchRegistry: true
     serviceUrl:
         defaultZone: http://localhost:8099/eureka/
-
-
-  security:
-    user:
-      name: configUser
-      password: configPassword
-      role: SYSTEM
+security:
+  user:
+    name: configUser
+    password: configPassword
+    role: SYSTEM

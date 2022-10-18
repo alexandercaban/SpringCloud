@@ -1,8 +1,10 @@
 spring:
-  application:
-    name: discovery
   cloud:
     config:
+      name: discovery
+      discovery:
+        service-id: config
+        enabled: true
       uri: http://localhost:8081
       username: configUser
       password: configPassword

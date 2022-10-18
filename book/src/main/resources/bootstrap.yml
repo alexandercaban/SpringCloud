@@ -5,10 +5,14 @@ spring:
       discovery:
         service-id: config
         enabled: true
+      uri: http://localhost:8081
       username: configUser
       password: configPassword
 eureka:
   client:
+    instance:
+      prefer-ip-address: true
+      hostname: localhost
     serviceUrl:
-      defaultZone: http://discUser:discPassword@localhost:8082/eureka/
+      defaultZone: http://localhost:8099/eureka/
 
