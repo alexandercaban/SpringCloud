@@ -1,6 +1,6 @@
 package com.scotiabank.discovery;
 
-import org.springframework.beans.factory.annotation.Autowired;
+/*import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpMethod;
@@ -55,4 +55,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .and().csrf().disable();
         }
     }
-}
+}*/
