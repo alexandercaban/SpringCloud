@@ -15,4 +15,3 @@ eureka:
       hostname: localhost
     serviceUrl:
       defaultZone: http://localhost:8099/eureka/
-

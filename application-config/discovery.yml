@@ -16,4 +16,3 @@ eureka:
 #     defaultZone: http://configUser:configPassword@localhost:8099/eureka
       defaultZone: http://localhost:8099/eureka
 
-
